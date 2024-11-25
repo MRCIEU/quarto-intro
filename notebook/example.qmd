@@ -2,11 +2,15 @@
 title: "Convert Bayes factors to beta and standard error"
 author: Gibran Hemani
 date: "2023-01-26"
+format: revealjs
+execute:
+  cache: true
+bibliography: references.bib
 ---
 
 ## Background
 
-Is it possible to convert BF to beta and standard error? According to [Giambartolomei et al 2014](https://pubmed.ncbi.nlm.nih.gov/24830394/)
+Is it possible to convert BF to beta and standard error? According to [@giambartolomei2014]
 
 $$
 ABF = \sqrt{1-r} \times exp(rZ^2/2)
@@ -82,11 +86,6 @@ ss <- map$map %>%
 table(ss$beta == 0)
 ```
 
-```{python}
-sspy = r.ss
-sspy['chr'][1]
-```
-
 ```{r}
 plot(-log10(pval) ~ pos, ss)
 ```
@@ -118,8 +117,12 @@ plot(z ~ lbf, a)
 New Z vs original Z
 
 ```{r}
+#| label: fig-examplefig
+#| fig-cap: "this shows that it works"
 plot(a$z^2 ~ ss$fval)
 ```
+
+@fig-examplefig shows that this works
 
 ```{r}
 lm(a$z^2 ~ ss$fval)
@@ -158,6 +161,30 @@ plot(a2$beta ~ ss$bhat)
 ```
 
 This looks good - it's setting different values to 0 in the two lbf vectors that correspond to two causal variants
+
+```{r}
+#| eval: false
+cmd <- "plink something something"
+system(cmd)
+```
+
+```{bash}
+ls -l
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+p <- ggplot(ss, aes(x=pos, y=beta)) +
+  geom_point()
+ggplotly(p)
+```
+
+
+
+```{r}
+plot(1:10)
+```
 
 ------------------------------------------------------------------------
 

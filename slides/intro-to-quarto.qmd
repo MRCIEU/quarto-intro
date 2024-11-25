@@ -1,9 +1,53 @@
 ---
-title: "Quarto"
+title: "Dynamic documents with Quarto"
+subtitle: https://github.com/mrcieu/quarto-intro
 author: "Gibran Hemani"
-format: revealjs
+date: 2024-11-25
+format: 
+  revealjs:
+    theme: dark
 editor: visual
 ---
+
+## 
+
+::::: columns
+::: {.column width="50%"}
+### This scientific life
+
+-   Theory
+
+-   Data
+
+-   Analysis
+
+-   Iteration
+
+-   Sharing
+
+-   Publishing
+
+-   Presenting
+
+-   Reproducibility
+:::
+
+::: {.column width="50%"}
+### Our tools
+
+-   Programming languages
+
+-   High performance computing
+
+-   Version control e.g. GitHub
+
+-   Cloud storage e.g. OneDrive
+
+-   Software e.g. conda, docker
+
+-   Dynamic documents
+:::
+:::::
 
 ## Workflow
 
@@ -57,6 +101,10 @@ e.g. Sweave, RMarkdown / knitr, Jupyter notebooks, Quarto
 -   Built from the ground up to be agnostic about programming language
 -   Trying to build collaborative workflows with reduced fragmentation
 
+## 
+
+![](images/clipboard-318997387.png){fig-align="center"}
+
 ## How would our example look in Quarto?
 
 Create a Quarto document in RStudio
@@ -99,10 +147,22 @@ A few options e.g.
 
 -   Documenting projects e.g <https://github.com/chorscroft/MR-and-selection>
 
--   Lab book / blog `quarto create project blog myblog`
+-   Lab book / blog
+
+    -   `quarto create project blog myblog`
 
 -   Websites e.g. [Lifecourse GWAS](https://github.com/lifecourse-gwas/lifecourse-gwas.github.io), [OpenMR](https://github.com/open-mr-project/open-mr-project.github.io)
 
 -   PhD thesis e.g. <https://github.com/mattlee821/bristolthesis>
 
 -   Writing papers? <https://github.com/quarto-journals>
+
+-   Making slides?
+
+## Further info
+
+-   [Quarto website](https://quarto.org)
+
+-   [Quarto on youtube](https://www.youtube.com/playlist?list=PL9HYL-VRX0oQI8fVioFxMTBrViFnRX_Df)
+
+-   [Official quarto blog](https://quarto.org/docs/blog/)

@@ -7,11 +7,12 @@
 <link href="intro-to-quarto_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="intro-to-quarto_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="intro-to-quarto_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="intro-to-quarto_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="intro-to-quarto_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.552">
 
   <meta name="author" content="Gibran Hemani">
-  <title>Quarto</title>
+  <meta name="dcterms.date" content="2024-11-25">
+  <title>Dynamic documents with Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -321,12 +322,13 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Quarto</h1>
+  <h1 class="title">Dynamic documents with Quarto</h1>
+  <p class="subtitle">https://github.com/mrcieu/quarto-intro</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -336,6 +338,35 @@ Gibran Hemani
 </div>
 </div>
 
+  <p class="date">2024-11-25</p>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="this-scientific-life">This scientific life</h3>
+<ul>
+<li><p>Theory</p></li>
+<li><p>Data</p></li>
+<li><p>Analysis</p></li>
+<li><p>Iteration</p></li>
+<li><p>Sharing</p></li>
+<li><p>Publishing</p></li>
+<li><p>Presenting</p></li>
+<li><p>Reproducibility</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="our-tools">Our tools</h3>
+<ul>
+<li><p>Programming languages</p></li>
+<li><p>High performance computing</p></li>
+<li><p>Version control e.g.&nbsp;GitHub</p></li>
+<li><p>Cloud storage e.g.&nbsp;OneDrive</p></li>
+<li><p>Software e.g.&nbsp;conda, docker</p></li>
+<li><p>Dynamic documents</p></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="workflow" class="slide level2">
 <h2>Workflow</h2>
@@ -345,7 +376,7 @@ Gibran Hemani
 <li><p>Send Word document to someone by email</p></li>
 </ul>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -383,7 +414,7 @@ Gibran Hemani
 <p>into one document</p>
 <p>e.g.&nbsp;Sweave, RMarkdown / knitr, Jupyter notebooks, Quarto</p>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 
 <img data-src="images/clipboard-2682063669.png" class="quarto-figure quarto-figure-center r-stretch"><ul>
@@ -391,6 +422,10 @@ Gibran Hemani
 <li>Trying to build collaborative workflows with reduced fragmentation</li>
 </ul>
 </section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+<img data-src="images/clipboard-318997387.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="how-would-our-example-look-in-quarto" class="slide level2">
 <h2>How would our example look in Quarto?</h2>
 <p>Create a Quarto document in RStudio</p>
@@ -433,10 +468,22 @@ Gibran Hemani
 <ul>
 <li><p>Teaching / practicals e.g.&nbsp;[MR practical](<a href="https://github.com/explodecomputer/mr-lecture-practical" class="uri">https://github.com/explodecomputer/mr-lecture-practical</a>)</p></li>
 <li><p>Documenting projects e.g <a href="https://github.com/chorscroft/MR-and-selection" class="uri">https://github.com/chorscroft/MR-and-selection</a></p></li>
-<li><p>Lab book / blog <code>quarto create project blog myblog</code></p></li>
+<li><p>Lab book / blog</p>
+<ul>
+<li><code>quarto create project blog myblog</code></li>
+</ul></li>
 <li><p>Websites e.g.&nbsp;<a href="https://github.com/lifecourse-gwas/lifecourse-gwas.github.io">Lifecourse GWAS</a>, <a href="https://github.com/open-mr-project/open-mr-project.github.io">OpenMR</a></p></li>
 <li><p>PhD thesis e.g.&nbsp;<a href="https://github.com/mattlee821/bristolthesis" class="uri">https://github.com/mattlee821/bristolthesis</a></p></li>
 <li><p>Writing papers? <a href="https://github.com/quarto-journals" class="uri">https://github.com/quarto-journals</a></p></li>
+<li><p>Making slides?</p></li>
+</ul>
+</section>
+<section id="further-info" class="slide level2">
+<h2>Further info</h2>
+<ul>
+<li><p><a href="https://quarto.org">Quarto website</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL9HYL-VRX0oQI8fVioFxMTBrViFnRX_Df">Quarto on youtube</a></p></li>
+<li><p><a href="https://quarto.org/docs/blog/">Official quarto blog</a></p></li>
 </ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
