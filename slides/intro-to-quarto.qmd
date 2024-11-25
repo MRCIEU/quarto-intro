@@ -1,0 +1,108 @@
+---
+title: "Quarto"
+author: "Gibran Hemani"
+format: revealjs
+editor: visual
+---
+
+## Workflow
+
+-   Do an analysis in R
+
+-   Copy results over to an email
+
+-   Send Word document to someone by email
+
+## 
+
+::::: columns
+::: {.column width="50%"}
+![](images/clipboard-2554417644.png)
+:::
+
+::: {.column width="50%"}
+-   Quite a manual process to create this
+-   Difficult to capture all the output
+-   Copying and pasting code - formatting issues
+-   Human error
+-   Duplicating quite a lot of effort
+:::
+:::::
+
+## What do we think about this?
+
+-   Simple, non-technical solution
+-   Quite manual
+-   It doesn't show the full picture
+-   It's not reproducible
+-   Easily shareable? Easily findable?
+
+## Dynamic documents / literate programming
+
+Integrate:
+
+-   code + the results of that code including tables and figures etc
+-   narrative about that code and output e.g. equations
+-   bibliographic references
+-   multiple coding languages
+
+into one document
+
+e.g. Sweave, RMarkdown / knitr, Jupyter notebooks, Quarto
+
+## 
+
+![](images/clipboard-2682063669.png){fig-align="center"}
+
+-   Built from the ground up to be agnostic about programming language
+-   Trying to build collaborative workflows with reduced fragmentation
+
+## How would our example look in Quarto?
+
+Create a Quarto document in RStudio
+
+::::: columns
+::: {.column width="30%"}
+![](images/clipboard-204058794.png)
+:::
+
+::: {.column width="70%"}
+1.  Create a new Quarto document
+2.  Edit / render cycle
+3.  Publish it (`quarto publish`)
+4.  Share the link
+:::
+:::::
+
+## Quarto components
+
+1.  Visual vs Source editor / markdown syntax
+2.  Inline code and code chunks
+3.  Using different languages
+4.  Insert a table
+5.  Cross reference a figure and add a figure caption
+6.  Add a reference and bibliography
+7.  Add an interactive plot
+8.  Convert to slides
+
+## Sharing the document
+
+A few options e.g.
+
+-   Github pages
+
+-   quarto.pub (`quarto publish`)
+
+## How is it being used?
+
+-   Teaching / practicals e.g. \[MR practical\](<https://github.com/explodecomputer/mr-lecture-practical>)
+
+-   Documenting projects e.g <https://github.com/chorscroft/MR-and-selection>
+
+-   Lab book / blog `quarto create project blog myblog`
+
+-   Websites e.g. [Lifecourse GWAS](https://github.com/lifecourse-gwas/lifecourse-gwas.github.io), [OpenMR](https://github.com/open-mr-project/open-mr-project.github.io)
+
+-   PhD thesis e.g. <https://github.com/mattlee821/bristolthesis>
+
+-   Writing papers? <https://github.com/quarto-journals>
